@@ -3,9 +3,10 @@
 interface ButtonNavBarProps {
     label: string;
     rota: string;
+    active: string;
 }
 
-export function ButtonNavBar({ label, rota }: ButtonNavBarProps) {
+export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
 
     const handleClick = () => {
         const section = document.getElementById(rota);
@@ -17,7 +18,11 @@ export function ButtonNavBar({ label, rota }: ButtonNavBarProps) {
     return (
         <button
             onClick={handleClick}
-            className="text-stone-700 dark:text-white hover:text-amber-500">
+            className={`${active === rota
+                    ? "text-amber-500 font-bold"
+                    : "text-stone-700 dark:text-white"
+                } hover:text-amber-500 transition-colors`}
+        >
             {label}
         </button>
     )

@@ -6,7 +6,7 @@ import { openLink } from "@/utils/openLink";
 export function Homes() {
 
     return (
-        <section className="bg-amber-50 dark:bg-stone-900 h-[calc(100vh-5rem)] grid grid-cols-2 transition-colors duration-500">
+        <section id="home" className="bg-amber-50 dark:bg-stone-900 h-[calc(100vh-5rem)] grid grid-cols-2 transition-colors duration-500">
             <div className="flex flex-col items-center mt-[6rem]">
                 <div>
                     <IamText />
