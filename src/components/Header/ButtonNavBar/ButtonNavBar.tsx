@@ -11,7 +11,11 @@ export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
     const handleClick = () => {
         const section = document.getElementById(rota);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            const top = section.getBoundingClientRect().top + window.scrollY - 80; // 5rem = 80px
+            window.scrollTo({
+                top,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -19,8 +23,8 @@ export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
         <button
             onClick={handleClick}
             className={`${active === rota
-                    ? "text-amber-500 font-bold"
-                    : "text-stone-700 dark:text-white"
+                ? "text-amber-500 font-bold"
+                : "text-stone-700 dark:text-white"
                 } hover:text-amber-500 transition-colors`}
         >
             {label}

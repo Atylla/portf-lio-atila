@@ -1,0 +1,18 @@
+.animatedGradientDark {
+  background: linear-gradient(270deg, #fff0d5, #eee4d7, #e7e7e7);
+  background-size: 600% 600%;
+  animation: gradientAnimation 7s ease infinite;
+}
+
+.animatedGradientLight {
+  background: linear-gradient(270deg, #242014, #1d1a0c, #13130d);
+  background-size: 600% 600%;
+  animation: gradientAnimation 7s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
