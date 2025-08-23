@@ -16,11 +16,11 @@ export function Homes() {
                 <div className="mt-[4rem] w-[13rem] flex items-center justify-between">
                  {/*  <LinkedinIcon className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"/> */}
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="logo-linkedin" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
+                    <ion-icon name="logo-linkedin" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200" ></ion-icon>
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="logo-github" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
+                    <ion-icon name="logo-github" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="mail-outline" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
+                    <ion-icon name="mail-outline" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
                 </div>
 
 
