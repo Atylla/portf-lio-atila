@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { IamText } from "./IamText/IamText"
-import LinkedinIcon from "../../../public/assets/icons-home/logo-linkedin.svg"
 
 
 export function Homes() {
@@ -16,11 +15,11 @@ export function Homes() {
 
                 <div className="mt-[4rem] w-[13rem] flex items-center justify-between">
                  {/*  <LinkedinIcon className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"/> */}
-                    {/* @ts-ignore */}
+                    {/* @ts-expect-error */}
                     <ion-icon name="logo-linkedin" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
-                    {/* @ts-ignore */}
+                    {/* @ts-expect-error */}
                     <ion-icon name="logo-github" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
-                    {/* @ts-ignore */}
+                    {/* @ts-expect-error */}
                     <ion-icon name="mail-outline" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"></ion-icon>
                 </div>
 
