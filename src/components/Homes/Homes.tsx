@@ -1,8 +1,10 @@
+'use client'
 import Image from "next/image"
 import { IamText } from "./IamText/IamText"
-
+import { openLink } from "@/utils/openLink";
 
 export function Homes() {
+
     return (
         <section className="bg-amber-50 dark:bg-stone-900 h-[calc(100vh-5rem)] grid grid-cols-2 transition-colors duration-500">
             <div className="flex flex-col items-center mt-[6rem]">
@@ -16,11 +18,11 @@ export function Homes() {
                 <div className="mt-[4rem] w-[13rem] flex items-center justify-between">
                  {/*  <LinkedinIcon className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500"/> */}
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="logo-linkedin" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200" ></ion-icon>
+                    <ion-icon onClick={() => openLink('linkedin')} name="logo-linkedin" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200" ></ion-icon>
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="logo-github" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
+                    <ion-icon onClick={() => openLink('github')} name="logo-github" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
                     {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
-                    <ion-icon name="mail-outline" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
+                    <ion-icon onClick={() => openLink('email')} name="mail-outline" className="dark:text-white text-black text-[2rem] hover:cursor-pointer hover:text-amber-500 transition-colors duration-200"></ion-icon>
                 </div>
 
 
