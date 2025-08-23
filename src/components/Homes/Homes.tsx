@@ -29,7 +29,7 @@ export function Homes() {
             <div className="relative p-0">
                 <div className="absolute top-25 left-[20%] w-100 h-100 rounded-full overflow-hidden dark:dark:shadow-[0_0_15px_5px_rgba(250,204,21,0.7)] transition-shadow duration-600">
                     <Image
-                        src="/assets/foto-perfil.jpg"
+                        src="/foto-perfil.jpg"
                         alt="Foto de Perfil"
                         fill
                         className="object-cover"
