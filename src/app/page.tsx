@@ -1,6 +1,7 @@
 import { About } from "@/components/About/About";
 import { Header } from "@/components/Header/Header";
 import { Homes } from "@/components/Homes/Homes";
+import { Skills } from "@/components/Skills/Skills";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="h-[5rem]"></div>
       <Homes />
       <About />
+      <Skills />
     </div>
 
   );

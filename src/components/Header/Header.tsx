@@ -4,7 +4,7 @@ import { ToggleButtonMode } from "./ToggleButtonMode/ToggleButtonMode";
 import { useActiveSection } from "@/hooks/useActiveSection";
 
 export function Header() {
-    const sectionIds = ["home", "sobre", "contato"];
+    const sectionIds = ["home", "sobre", "skills", "projetos", "contato"];
     const activeSection = useActiveSection(sectionIds);
 
     return (

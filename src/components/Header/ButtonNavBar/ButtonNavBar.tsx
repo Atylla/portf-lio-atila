@@ -11,7 +11,7 @@ export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
     const handleClick = () => {
         const section = document.getElementById(rota);
         if (section) {
-            const top = section.getBoundingClientRect().top + window.scrollY - 80; // 5rem = 80px
+            const top = section.getBoundingClientRect().top + window.scrollY - 80;
             window.scrollTo({
                 top,
                 behavior: 'smooth'
