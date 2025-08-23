@@ -1,0 +1,14 @@
+.barAnimation {
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  margin-left: 4px;
+  margin-bottom: -3px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
