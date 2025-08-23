@@ -43,7 +43,9 @@ export function About() {
             <div className="w-full max-w-4xl gap-8">
                 <div className="flex items-center justify-center">
                     <div className="p-6 w-[30rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem]">
+                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                            {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
+                            <ion-icon name="code-working-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" ></ion-icon>
                             Engenharia de Software
                         </h3>
                         <p className="text-xs text-stone-300 dark:text-stone-800">
@@ -56,7 +58,9 @@ export function About() {
                 </div>
                 <div className="grid grid-cols-2">
                     <div className="p-6 w-[30rem] pl-[5rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem]">
+                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                            {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
+                            <ion-icon name="construct-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" />
                             Técnico em Informática
                         </h3>
                         <p className="text-xs text-stone-300 dark:text-stone-800">
@@ -66,7 +70,12 @@ export function About() {
                     </div>
 
                     <div className="p-6 w-[30rem] pl-[5rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem]">Robótica</h3>
+                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                            {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
+                            <ion-icon name="cog-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" ></ion-icon>
+                            Robótica
+                        </h3>
+
                         <p className="text-xs text-stone-300 dark:text-stone-800">
                             Introdução à lógica de programação e controle de sistemas automatizados, com primeiros contatos com linguagens como C e C++.
                             Desenvolvimento de raciocínio lógico, resolução de problemas e integração de software com hardware.
