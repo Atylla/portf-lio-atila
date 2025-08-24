@@ -18,19 +18,19 @@ export function Projetos() {
   return (
     <section
       id="projetos"
-      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 bg-stone-50"
+      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 dark:bg-stone-50 bg-stone-900"
     >
       <h1 className="text-4xl md:text-5xl font-bold dark:text-stone-900 text-stone-50 mb-6 shinyText">
         Projetos
       </h1>
 
-      <div className="w-full flex flex-row items-center justify-center h-[3rem] bg-stone-900 gap-4 px-4">
-        <button className="border-b-1 border-stone-50 w-[11rem] h-[2.5rem] text-stone-50">
+      <div className="w-full flex flex-row items-center justify-center h-[3rem] bg-stone-900 gap-4 px-4 mt-3 p-1">
+        {/*<button className="border-b-1 border-stone-50 w-[11rem] h-[2.5rem] text-stone-50">
           All
-        </button>
+        </button>*/}
         <input
           type="text"
-          placeholder="Pesquisar tecnologia..."
+          placeholder="Pesquisar tecnologia"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="px-2 border-b-1 border-stone-50 bg-transparent text-stone-50 w-[11rem] h-[2.5rem] outline-none"

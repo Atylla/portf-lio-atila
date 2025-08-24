@@ -1,4 +1,32 @@
 export const projetos = {
+    atilaStore: {
+        nome: 'Store App',
+        img: '/store-app.png',
+        linkDeploy: 'https://atila-store.vercel.app/',
+        linkGitHub: 'https://github.com/Atylla/atila-store',
+        tecnologia: [
+            'NextJS',
+            'ReactJS',
+            'Scss',
+            'Css Modules',
+            'TypeScript'
+        ],
+        descricao: 'Uma loja fake para dowload dos meus apps mobile e desktop (ainda em desenvovimento)'
+    },
+    climaApp: {
+        nome: 'Clima App Web',
+        img: '/clima-app.png',
+        linkDeploy: 'https://clima-app-gf9l.vercel.app/',
+        linkGitHub: 'https://github.com/Atylla/Clima-App',
+        tecnologia: [
+            'NextJS',
+            'ReactJS',
+            'Scss',
+            'Css Modules',
+            'TypeScript'
+        ],
+        descricao: 'Um site de clima para pesquisar por cidade'
+    },
     simuladorOS: {
         nome: 'EimiOS',
         img: '/eimios.png',
