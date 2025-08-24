@@ -35,6 +35,12 @@ export function Footer() {
                         name="mail-outline" 
                         className="text-2xl md:text-3xl hover:text-amber-500 cursor-pointer transition-colors duration-300"
                     />
+                    {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */}
+                    <ion-icon 
+                        onClick={() => openLink('instagram')}
+                        name="logo-instagram"
+                        className="text-2xl md:text-3xl hover:text-amber-500 cursor-pointer transition-colors duration-300"
+                    />
                 </div>
             </div>
 
