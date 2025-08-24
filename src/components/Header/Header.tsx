@@ -8,7 +8,7 @@ export function Header() {
     const activeSection = useActiveSection(sectionIds);
 
     return (
-        <header className="fixed top-0 w-full h-[5rem] z-50 bg-amber-50 dark:bg-stone-900 shadow-sm flex justify-center items-center transition-colors duration-500">
+        <header className="fixed top-0 w-full h-[5rem] z-40 bg-amber-50 dark:bg-stone-900 shadow-sm flex justify-center items-center transition-colors duration-500">
             <div className="w-2/3 h-full flex justify-between items-center px-6">
                 <ToggleButtonMode />
                 <nav className="flex gap-7 items-center">

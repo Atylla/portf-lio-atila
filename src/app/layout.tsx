@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import '@/styles/global.scss'
 import '@/styles/global.css'
 import { IoniconsLoader } from "@/components/IoniconsLoader/IoniconsLoader";
+import { Loading } from "@/components/Loading/Loading";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} `}>
+        <Loading />
         {children}
         <IoniconsLoader />
       </body>
