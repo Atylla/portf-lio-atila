@@ -30,7 +30,7 @@ export const projetos = {
     simuladorOS: {
         nome: 'EimiOS',
         img: '/eimios.png',
-        linkDeploy: 'https://simulador-de-os-y38g-iogz65fl1-atilas-projects-23f305cf.vercel.app',
+        linkDeploy: 'https://simulador-de-os-y38g.vercel.app/',
         linkGitHub: 'https://github.com/Atylla/Simulador-de-OS',
         tecnologia: [
             'JavaScript',
