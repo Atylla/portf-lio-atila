@@ -2,7 +2,7 @@ export function Contato() {
     return (
         <section
             id="contato"
-            className="flex flex-col items-center min-h-[calc(100vh-5rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-950 transition-colors duration-500"
+            className="flex flex-col items-center min-h-[calc(100vh-5rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-400 dark:from-stone-800 dark:to-stone-950 transition-colors duration-500"
         >
             <h1 className="text-3xl md:text-5xl font-bold text-stone-900 dark:text-stone-50 mb-10 shinyText">
                 Contato
@@ -21,7 +21,7 @@ export function Contato() {
                         name="name"
                         placeholder=" "
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                        className="peer w-full border-b border-l border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
                             focus:border-amber-500 focus:ring-0 outline-none transition
                             valid:border-amber-500"
                     />
@@ -44,7 +44,7 @@ export function Contato() {
                         name="email"
                         placeholder=" "
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                        className="peer w-full border-b border-l border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
                             focus:border-amber-500 focus:ring-0 outline-none transition
                             valid:border-amber-500"
                     />
@@ -66,7 +66,7 @@ export function Contato() {
                         placeholder=" "
                         rows={5}
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                        className="peer w-full border-b border-l border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
                             focus:border-amber-500 focus:ring-0 outline-none transition
                             valid:border-amber-500"
                     />
@@ -83,7 +83,7 @@ export function Contato() {
 
                 <button
                     type="submit"
-                    className="self-center w-1/3 mt-4 py-3 px-6 font-semibold border-l border-r border-stone-500 hover:bg-stone-800 hover:border-amber-500 hover:text-amber-500 text-white hover:shadow-lg transition transform hover:-translate-y-0.5"
+                    className="self-center w-1/3 mt-4 py-3 px-6 font-semibold border-l border-r border-stone-700  hover:border-amber-500 hover:text-amber-500 text-black dark:text-white hover:shadow-lg transition transform hover:-translate-y-0.5"
                 >
                     Enviar
                 </button>
