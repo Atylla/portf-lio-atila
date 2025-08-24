@@ -20,11 +20,11 @@ export function About() {
             id="sobre"
             className={`flex flex-col items-center min-h-[calc(100vh-5rem)] p-8 md:p-16 transition-colors duration-500 ${isDark ? styles.animatedGradientDark : styles.animatedGradientLight}`}
         >
-            <h1 className="text-4xl md:text-5xl font-bold text-white dark:text-stone-900 mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-white dark:text-stone-900 mb-6">
                 Sobre mim
             </h1>
 
-            <p className="max-w-3xl text-lg md:text-sm mt-[3rem] text-stone-300 dark:text-stone-800 leading-relaxed mb-10">
+            <p className="max-w-3xl text-[0.8rem] md:text-sm mt-[3rem] text-stone-300 dark:text-stone-800 leading-relaxed mb-10">
                 Sou <strong>Atila Araujo</strong>, formado em <em>Engenharia de Software</em> e em constante evolução
                 como <strong>desenvolvedor</strong> apaixonado por tecnologia. Comecei na <em>web</em>, mas ampliei
                 meus horizontes para o desenvolvimento <strong>mobile</strong>, <strong>desktop</strong> e <strong>backend</strong>. Tenho uma base sólida em <strong>TI</strong>, reforçada por cursos e prática
@@ -36,14 +36,14 @@ export function About() {
                 <strong>criatividade</strong>, <strong>lógica</strong> e <strong>originalidade</strong>.
             </p>
 
-            <h3 className="text-2xl font-bold text-white dark:text-stone-900 mb-6 mt-[4rem]">
+            <h3 className="text-x1 md:text-2xl font-bold text-white dark:text-stone-900 mb-6 mt-2 md:mt-[4rem]">
                 Formação Acadêmica
             </h3>
 
-            <div className="w-full max-w-4xl gap-8">
+            <div className="w-full max-w-4xl gap-3 md:gap-8">
                 <div className="flex items-center justify-center">
                     <div className="p-6 w-[30rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                        <h3 className="text-sm md:text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
                             {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
                             <ion-icon name="code-working-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" ></ion-icon>
                             Engenharia de Software
@@ -56,9 +56,9 @@ export function About() {
 
 
                 </div>
-                <div className="grid grid-cols-2">
-                    <div className="p-6 w-[30rem] pl-[5rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                <div className="grid grid-col-1 md:grid-cols-2">
+                    <div className="p-6 w-[30rem] md:pl-[5rem]">
+                        <h3 className="text-sm md:text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
                             {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
                             <ion-icon name="construct-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" />
                             Técnico em Informática
@@ -69,8 +69,8 @@ export function About() {
                         </p>
                     </div>
 
-                    <div className="p-6 w-[30rem] pl-[5rem]">
-                        <h3 className="text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
+                    <div className="p-6 w-[30rem] md:pl-[5rem]">
+                        <h3 className="text-sm md:text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
                             {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
                             <ion-icon name="cog-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" ></ion-icon>
                             Robótica
