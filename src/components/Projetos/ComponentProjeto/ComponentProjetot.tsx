@@ -42,9 +42,11 @@ export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia
                 <a href={linkDeploy} target="_blank" rel="noreferrer">
                     <FiExternalLink size={22} className="hover:text-amber-700"/>
                 </a>
+                {/*
                 <button className="ml-auto mr-3 px-3 py-1 rounded-lg bg-stone-700 hover:bg-amber-700">
                     Saiba mais
                 </button>
+                */}
             </div>
         </div>
     )

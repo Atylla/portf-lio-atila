@@ -11,7 +11,7 @@ export function Skills() {
     return (
         <section
             id="skills"
-            className={`flex flex-col items-center min-h-[calc(100vh/2)] md:min-h-[calc(100vh-5rem)] p-8 md:p-16 transition-colors duration-500`}
+            className={`flex flex-col items-center min-h-[calc(100vh-20rem)] md:min-h-[calc(100vh-5rem)] p-8 md:p-16 transition-colors duration-500`}
         >
             <h1 className="text-3xl md:text-5xl font-bold dark:text-white text-stone-900 mb-6">
                 Habilidades
@@ -45,7 +45,7 @@ export function Skills() {
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-between gap-2 mt-5 md:mt-[5rem]">
+                <div className="flex flex-row justify-between gap-2 mt-[5rem]">
                     <div className=" flex flex-col items-center gap-1">
                         <FaGitAlt className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-red-500 hover:scale-[1.1] transition-scale duration-200" />
                         <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">Git</p>
@@ -71,7 +71,7 @@ export function Skills() {
             </div>
 
             <div className="md:w-2/3 w-[95%]">
-                <h2 className={`text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-50 mb-6 ${styles.shinyText}`}>
+                <h2 className={`md:mt-1 mt-[3rem] text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-50 mb-6 ${styles.shinyText}`}>
                     Aprendendo:
                 </h2>
 

@@ -12,17 +12,14 @@ export function Header() {
     return (
         <header className="fixed top-0 w-full h-[5rem] z-40 bg-amber-50 dark:bg-stone-900 shadow-sm flex justify-center items-center transition-colors duration-500">
             <div className="w-[80%] md:w-2/3 h-full flex justify-between items-center px-4 md:px-6">
-                {/* Toggle de modo */}
                 <ToggleButtonMode />
 
-                {/* Menu desktop */}
                 <nav className="hidden md:flex gap-7 items-center">
                     {sectionIds.map((id) => (
                         <ButtonNavBar key={id} label={id.charAt(0).toUpperCase() + id.slice(1)} rota={id} active={activeSection}/>
                     ))}
                 </nav>
 
-                {/* Botão menu mobile */}
                 <button
                     className="md:hidden text-2xl text-black dark:text-white"
                     onClick={() => setIsOpen(!isOpen)}
