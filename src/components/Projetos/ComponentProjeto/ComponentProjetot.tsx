@@ -15,7 +15,7 @@ export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia
     return (
         <div className="bg-stone-900 text-stone-50 shadow-md overflow-hidden p-1 flex flex-col gap-3 hover:scale-[1.02] transition">
             <a href={linkDeploy} target="_blank" rel="noreferrer">
-                <div className="w-full h-[22rem] relative">
+                <div className="w-full h-[15rem] md:w-full md:h-[22rem] relative">
                     <Image
                         src={img}
                         alt={nome}

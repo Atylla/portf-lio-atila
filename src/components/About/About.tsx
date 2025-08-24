@@ -57,7 +57,7 @@ export function About() {
 
                 </div>
                 <div className="grid grid-col-1 md:grid-cols-2">
-                    <div className="p-6 w-[30rem] md:pl-[5rem]">
+                    <div className="p-6 w-[25rem] md:w-[30rem] md:pl-[5rem]">
                         <h3 className="text-sm md:text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
                             {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
                             <ion-icon name="construct-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" />
@@ -69,7 +69,7 @@ export function About() {
                         </p>
                     </div>
 
-                    <div className="p-6 w-[30rem] md:pl-[5rem]">
+                    <div className="p-6 w-[25rem] md:w-[30rem] md:pl-[5rem]">
                         <h3 className="text-sm md:text-base font-semibold text-white dark:text-stone-900 mb-[1rem] flex flex-row items-center gap-2">
                             {/* @ts-expect-error: ion-icon é um web component não reconhecido pelo TS */} 
                             <ion-icon name="cog-outline" className="dark:text-black text-white text-[2rem] hover:text-amber-500 transition-colors duration-200" ></ion-icon>

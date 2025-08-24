@@ -2,7 +2,7 @@ export function Contato() {
     return (
         <section
             id="contato"
-            className="flex flex-col items-center min-h-[calc(100vh-5rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-400 dark:from-stone-800 dark:to-stone-950 transition-colors duration-500"
+            className="flex flex-col items-center min-h-[calc(100vh-20rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-400 dark:from-stone-800 dark:to-stone-950 transition-colors duration-500"
         >
             <h1 className="text-3xl md:text-5xl font-bold text-stone-900 dark:text-stone-50 mb-10 shinyText">
                 Contato

@@ -11,7 +11,7 @@ export function Header() {
 
     return (
         <header className="fixed top-0 w-full h-[5rem] z-40 bg-amber-50 dark:bg-stone-900 shadow-sm flex justify-center items-center transition-colors duration-500">
-            <div className="w-11/12 md:w-2/3 h-full flex justify-between items-center px-4 md:px-6">
+            <div className="w-[80%] md:w-2/3 h-full flex justify-between items-center px-4 md:px-6">
                 {/* Toggle de modo */}
                 <ToggleButtonMode />
 
