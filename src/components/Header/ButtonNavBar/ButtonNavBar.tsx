@@ -4,6 +4,7 @@ interface ButtonNavBarProps {
     label: string;
     rota: string;
     active: string;
+    className?: string;
 }
 
 export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
