@@ -50,6 +50,16 @@ export const projetos = {
         ],
         descricao: 'Um gerador de RPG para mestres e jogadores'
     },
+    terminalRpg: {
+        nome: 'Terminal RPG',
+        img: '/terminalrpg.png',
+        linkDeploy: 'https://atylla.github.io/TerminalRPG/',
+        linkGitHub: 'https://github.com/Atylla/TerminalRPG',
+        tecnologia: [
+            'JavaScript'
+        ],
+        descricao: 'Um jogo de RPG por comandos que simula um Terminal'
+    },
     atlasNote: {
         nome: 'Atlas Note',
         img: '/atlasnote.png',
@@ -60,15 +70,6 @@ export const projetos = {
             'Css'
         ],
         descricao: 'Um clone simples e minimalista do EverNote'
-    },
-    terminalRpg: {
-        nome: 'Terminal RPG',
-        img: '/terminalrpg.png',
-        linkDeploy: 'https://atylla.github.io/TerminalRPG/',
-        linkGitHub: 'https://github.com/Atylla/TerminalRPG',
-        tecnologia: [
-            'JavaScript'
-        ],
-        descricao: 'Um jogo de RPG por comandos que simula um Terminal'
     }
+    
 }
