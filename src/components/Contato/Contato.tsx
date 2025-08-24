@@ -2,7 +2,7 @@ export function Contato() {
     return (
         <section
             id="contato"
-            className="flex flex-col items-center min-h-[calc(100vh-5rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-900 dark:to-stone-800 transition-colors duration-500"
+            className="flex flex-col items-center min-h-[calc(100vh-5rem)] px-6 md:px-16 py-12 bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-950 transition-colors duration-500"
         >
             <h1 className="text-3xl md:text-5xl font-bold text-stone-900 dark:text-stone-50 mb-10 shinyText">
                 Contato
@@ -21,14 +21,17 @@ export function Contato() {
                         name="name"
                         placeholder=" "
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 focus:border-amber-500 focus:ring-0 outline-none transition"
+                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                            focus:border-amber-500 focus:ring-0 outline-none transition
+                            valid:border-amber-500"
                     />
 
                     <label
                         htmlFor="name"
                         className="absolute left-3 top-1 text-stone-500 dark:text-stone-400 text-sm transition-all 
-                                    peer-placeholder-shown:top-5 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
-                                    peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500"
+             peer-placeholder-shown:top-4 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
+             peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500
+             peer-valid:-top-1 peer-valid:text-sm peer-valid:text-amber-500"
                     >
                         Nome
                     </label>
@@ -41,13 +44,16 @@ export function Contato() {
                         name="email"
                         placeholder=" "
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 focus:border-amber-500 focus:ring-0 outline-none transition"
+                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                            focus:border-amber-500 focus:ring-0 outline-none transition
+                            valid:border-amber-500"
                     />
                     <label
                         htmlFor="email"
                         className="absolute left-3 top-1 text-stone-500 dark:text-stone-400 text-sm transition-all 
-                                    peer-placeholder-shown:top-5 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
-                                    peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500"
+             peer-placeholder-shown:top-4 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
+             peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500
+             peer-valid:-top-1 peer-valid:text-sm peer-valid:text-amber-500"
                     >
                         E-mail
                     </label>
@@ -60,13 +66,16 @@ export function Contato() {
                         placeholder=" "
                         rows={5}
                         required
-                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 focus:border-amber-500 focus:ring-0 outline-none transition"
+                        className="peer w-full border-b border-l border-stone-300 dark:border-stone-700 bg-transparent px-3 pt-5 pb-2 text-stone-900 dark:text-stone-50 
+                            focus:border-amber-500 focus:ring-0 outline-none transition
+                            valid:border-amber-500"
                     />
                     <label
                         htmlFor="message"
                         className="absolute left-3 top-1 text-stone-500 dark:text-stone-400 text-sm transition-all 
-                                    peer-placeholder-shown:top-5 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
-                                    peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500"
+             peer-placeholder-shown:top-4 peer-placeholder-shown:text-stone-400 peer-placeholder-shown:text-base 
+             peer-focus:-top-1 peer-focus:text-sm peer-focus:text-amber-500
+             peer-valid:-top-1 peer-valid:text-sm peer-valid:text-amber-500"
                     >
                         Mensagem
                     </label>
