@@ -1,5 +1,6 @@
 import { About } from "@/components/About/About";
 import { Contato } from "@/components/Contato/Contato";
+import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
 import { Homes } from "@/components/Homes/Homes";
 import { Projetos } from "@/components/Projetos/Projetos";
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Projetos />
       <Contato />
+      <Footer />
     </div>
 
   );
