@@ -28,9 +28,8 @@ export function Header() {
                 </button>
             </div>
 
-            {/* Menu mobile */}
             {isOpen && (
-                <div className="absolute top-[5rem] left-0 w-full bg-amber-50 dark:bg-stone-900 flex flex-col items-center py-4 md:hidden shadow-md">
+                <div className="gap-5 absolute top-[5rem] left-0 w-full bg-amber-50 dark:bg-stone-900 flex flex-col items-center py-4 md:hidden shadow-md">
                     {sectionIds.map((id) => (
                         <ButtonNavBar
                             key={id}
@@ -38,6 +37,7 @@ export function Header() {
                             rota={id}
                             active={activeSection}
                             className="py-2"
+                            onClick={() => setIsOpen(false)}
                         />
                     ))}
                 </div>

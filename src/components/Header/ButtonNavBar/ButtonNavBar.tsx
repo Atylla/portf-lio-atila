@@ -5,9 +5,10 @@ interface ButtonNavBarProps {
     rota: string;
     active: string;
     className?: string;
+    onClick?: () => void;
 }
 
-export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
+export function ButtonNavBar({ label, rota, active, onClick }: ButtonNavBarProps) {
 
     const handleClick = () => {
         const section = document.getElementById(rota);
@@ -18,6 +19,7 @@ export function ButtonNavBar({ label, rota, active }: ButtonNavBarProps) {
                 behavior: 'smooth'
             });
         }
+        if (onClick) onClick();
     };
 
     return (

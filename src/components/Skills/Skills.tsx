@@ -45,7 +45,7 @@ export function Skills() {
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-between gap-2 mt-[5rem]">
+                <div className="flex flex-row justify-between gap-4 mt-[5rem]">
                     <div className=" flex flex-col items-center gap-1">
                         <FaGitAlt className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-red-500 hover:scale-[1.1] transition-scale duration-200" />
                         <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">Git</p>
@@ -64,7 +64,7 @@ export function Skills() {
                     </div>
                     <div className=" flex flex-col items-center gap-1">
                         <SiStyledcomponents className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-pink-800 hover:scale-[1.1] transition-scale duration-200" />
-                        <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50 w-[7rem]">Styled-components</p>
+                        <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50 w-[4rem] md:w-[7rem]">Styled-components</p>
                     </div>
                 </div>
 
