@@ -5,6 +5,8 @@ import { projetos } from "@/utils/dataProjetos" // ajuste o caminho
 import { ComponentProjeto } from "./ComponentProjeto/ComponentProjetot"
 
 export function Projetos() {
+  const [mostrarTodos, setMostrarTodos] = useState(false);
+
   const [search, setSearch] = useState("")
 
   const projetosArray = Object.values(projetos)
@@ -15,10 +17,13 @@ export function Projetos() {
     )
   )
 
+  const lista = search ? filtered : projetosArray;
+  const projetosVisiveis = mostrarTodos ? lista : lista.slice(0, 6);
+
   return (
     <section
       id="projetos"
-      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 dark:bg-stone-50 bg-stone-900"
+      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 bg-stone-50 dark:bg-stone-900"
     >
       <h1 className="text-4xl md:text-5xl font-bold dark:text-stone-900 text-stone-50 mb-6 shinyText">
         Projetos
@@ -37,11 +42,23 @@ export function Projetos() {
         />
       </div>
 
+
+
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {(search ? filtered : projetosArray).map((p, idx) => (
+        {projetosVisiveis.map((p, idx) => (
           <ComponentProjeto key={idx} {...p} />
         ))}
       </div>
+
+      {/* botão "ver mais" só aparece se tiver mais de 6 resultados */}
+      {lista.length > 6 && (
+        <button
+          onClick={() => setMostrarTodos(!mostrarTodos)}
+          className="mt-3 px-3 py-2 border-l border-r border-r-stone-600 border-l-stone-600 text-white font-semibold hover:border-l-amber-600 hover:border-r-amber-600 hover:bg-stone-800 transition"
+        >
+          {mostrarTodos ? "Ver menos" : "Ver mais"}
+        </button>
+      )}
     </section>
   )
 }

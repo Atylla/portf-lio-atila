@@ -13,7 +13,7 @@ interface Props {
 
 export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia, descricao }: Props) {
     return (
-        <div className="bg-stone-900 text-stone-50 shadow-md overflow-hidden p-1 flex flex-col gap-3 hover:scale-[1.02] transition">
+        <div className="bg-stone-900 text-stone-50 overflow-hidden p-1 flex flex-col gap-3 hover:scale-[1.02] transition">
             <a href={linkDeploy} target="_blank" rel="noreferrer">
                 <div className="w-full h-[15rem] md:w-full md:h-[22rem] relative">
                     <Image
