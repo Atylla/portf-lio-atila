@@ -23,9 +23,9 @@ export function Projetos() {
   return (
     <section
       id="projetos"
-      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 bg-stone-50 dark:bg-stone-900"
+      className="flex flex-col items-center min-h-[calc(100vh-5rem)] pt-16 bg-amber-100 dark:bg-stone-900"
     >
-      <h1 className="text-4xl md:text-5xl font-bold dark:text-stone-900 text-stone-50 mb-6 shinyText">
+      <h1 className="text-4xl md:text-5xl font-bold text-stone-900 dark:text-stone-50 mb-6 shinyText">
         Projetos
       </h1>
 

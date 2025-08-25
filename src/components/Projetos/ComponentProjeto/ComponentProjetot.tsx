@@ -1,4 +1,6 @@
+import ModalDetalhesProjeto from "@/components/ModalDetalhesProjeto/ModalDetalhesProjeto"
 import Image from "next/image"
+import { useState } from "react"
 import { FaGithub } from "react-icons/fa"
 import { FiExternalLink } from "react-icons/fi"
 
@@ -12,6 +14,8 @@ interface Props {
 }
 
 export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia, descricao }: Props) {
+    const [isOpenModalDetalhesProjeto, setIsOpenModalDetalhesProjeto] = useState(false);
+
     return (
         <div className="bg-stone-900 text-stone-50 overflow-hidden p-1 flex flex-col gap-3 hover:scale-[1.02] transition">
             <a href={linkDeploy} target="_blank" rel="noreferrer">
@@ -37,17 +41,30 @@ export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia
 
             <div className="flex gap-4 mt-auto ml-3 mb-3">
                 <a href={linkGitHub} target="_blank" rel="noreferrer">
-                    <FaGithub size={22} className="hover:text-amber-700"/>
+                    <FaGithub size={22} className="hover:text-amber-700" />
                 </a>
                 <a href={linkDeploy} target="_blank" rel="noreferrer">
-                    <FiExternalLink size={22} className="hover:text-amber-700"/>
+                    <FiExternalLink size={22} className="hover:text-amber-700" />
                 </a>
-                {/*
-                <button className="ml-auto mr-3 px-3 py-1 rounded-lg bg-stone-700 hover:bg-amber-700">
+
+                <button
+                    onClick={() => setIsOpenModalDetalhesProjeto(true)}
+                    className="ml-auto mr-3 px-3 py-1 rounded-lg bg-stone-700 hover:bg-amber-700">
                     Saiba mais
                 </button>
-                */}
             </div>
+
+            {isOpenModalDetalhesProjeto && (
+                <ModalDetalhesProjeto
+                    onClose={() => setIsOpenModalDetalhesProjeto(false)}
+                    nome={nome}
+                    img={img}
+                    descricao={descricao}
+                    tecnologia={tecnologia}
+                    linkDeploy={linkDeploy}
+                    linkGitHub={linkGitHub}
+                />
+            )}
         </div>
     )
 }
