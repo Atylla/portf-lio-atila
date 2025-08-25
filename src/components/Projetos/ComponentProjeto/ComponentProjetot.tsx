@@ -11,9 +11,10 @@ interface Props {
     linkGitHub: string
     tecnologia: string[]
     descricao: string
+    descricaoLonga: string
 }
 
-export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia, descricao }: Props) {
+export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia, descricao, descricaoLonga }: Props) {
     const [isOpenModalDetalhesProjeto, setIsOpenModalDetalhesProjeto] = useState(false);
 
     return (
@@ -63,6 +64,7 @@ export function ComponentProjeto({ nome, img, linkDeploy, linkGitHub, tecnologia
                     tecnologia={tecnologia}
                     linkDeploy={linkDeploy}
                     linkGitHub={linkGitHub}
+                    descricaoLonga={descricaoLonga}
                 />
             )}
         </div>

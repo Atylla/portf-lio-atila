@@ -13,6 +13,7 @@ interface ModalDetalhesProjetoProps {
     tecnologia: string[]
     linkDeploy: string
     linkGitHub: string
+    descricaoLonga: string
 }
 
 export default function ModalDetalhesProjeto({
@@ -23,6 +24,7 @@ export default function ModalDetalhesProjeto({
     tecnologia,
     linkDeploy,
     linkGitHub,
+    descricaoLonga
 }: ModalDetalhesProjetoProps) {
     const [mounted, setMounted] = useState(false)
 
@@ -86,7 +88,8 @@ export default function ModalDetalhesProjeto({
 
                 <div className="p-6 overflow-y-auto flex-1">
                     <p className="text-sm leading-relaxed text-stone-600 dark:text-stone-300 whitespace-pre-line">
-                        {descricao}
+                        {descricao} <br/> <br/>
+                        {descricaoLonga}
                     </p>
                 </div>
             </div>
