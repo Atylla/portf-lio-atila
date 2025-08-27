@@ -2,8 +2,8 @@ import { DiJavascript } from "react-icons/di";
 import { BiLogoTypescript, BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
 import { RiNextjsFill } from "react-icons/ri";
-import { FaGitAlt, FaGithub, FaSass, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiStyledcomponents, SiExpress } from "react-icons/si";
+import { FaGitAlt, FaGithub, FaSass, FaNodeJs, FaDatabase, FaDocker } from "react-icons/fa";
+import { SiStyledcomponents, SiExpress, SiZod } from "react-icons/si";
 
 import styles from './index.module.scss'
 
@@ -68,14 +68,11 @@ export function Skills() {
                     </div>
                 </div>
 
-            </div>
-
-            <div className="md:w-2/3 w-[95%]">
-                <h2 className={`md:mt-1 mt-[3rem] text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-50 mb-6 ${styles.shinyText}`}>
-                    Aprendendo:
-                </h2>
-
-                <div className="flex flex-row justify-around">
+                <div className="flex flex-row justify-around gap-4 md:mt-[3rem] mt-[4rem]">
+                    <div className=" flex flex-col items-center gap-1">
+                        <SiZod className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-sky-600 hover:scale-[1.1] transition-scale duration-200" />
+                        <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">Zod</p>
+                    </div>
                     <div className=" flex flex-col items-center gap-1">
                         <FaNodeJs className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-green-500 hover:scale-[1.1] transition-scale duration-200" />
                         <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">NodeJS</p>
@@ -83,6 +80,20 @@ export function Skills() {
                     <div className=" flex flex-col items-center gap-1">
                         <SiExpress className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-green-400 hover:scale-[1.1] transition-scale duration-200" />
                         <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">ExpressJS</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="md:w-2/3 w-[95%] md:mt-[3rem]">
+                <h2 className={`md:mt-1 mt-[3rem] text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-50 mb-6 ${styles.shinyText}`}>
+                    Aprendendo:
+                </h2>
+
+                <div className="flex flex-row justify-around">
+                    <div className=" flex flex-col items-center gap-1">
+                        <FaDocker className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-sky-500 hover:scale-[1.1] transition-scale duration-200" />
+                        <p className="text-[0.8rem] md:text-lg font-bold text-stone-900 dark:text-stone-50">Docker</p>
                     </div>
                     <div className=" flex flex-col items-center gap-1">
                         <FaDatabase className="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem] text-red-500 hover:scale-[1.1] transition-scale duration-200" />
